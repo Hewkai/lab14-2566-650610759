@@ -1,7 +1,10 @@
-export const Footer = () => {
+export const Footer = (props) => {
   return (
-    <div>
-      <p>Copyright ©</p>
+    <div className="mt-3">
+      <hr />
+      <p className="text-secondary text-center">
+        Copyright © {props.year} {props.name} {props.id}
+      </p>
     </div>
   );
 };
